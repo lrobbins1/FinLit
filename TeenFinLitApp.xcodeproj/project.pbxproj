@@ -11,6 +11,9 @@
 		348CEB2128DFF30D004F82A1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348CEB2028DFF30D004F82A1 /* ContentView.swift */; };
 		348CEB2328DFF316004F82A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 348CEB2228DFF316004F82A1 /* Assets.xcassets */; };
 		348CEB2628DFF316004F82A1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 348CEB2528DFF316004F82A1 /* Preview Assets.xcassets */; };
+		348CEB3128DFF416004F82A1 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 348CEB3028DFF416004F82A1 /* data.json */; };
+		348CEB3328DFF485004F82A1 /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348CEB3228DFF485004F82A1 /* LibraryView.swift */; };
+		348CEB3528DFF495004F82A1 /* FunctionalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348CEB3428DFF495004F82A1 /* FunctionalView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		348CEB2028DFF30D004F82A1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		348CEB2228DFF316004F82A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		348CEB2528DFF316004F82A1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		348CEB3028DFF416004F82A1 /* data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		348CEB3228DFF485004F82A1 /* LibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryView.swift; sourceTree = "<group>"; };
+		348CEB3428DFF495004F82A1 /* FunctionalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionalView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +58,10 @@
 			isa = PBXGroup;
 			children = (
 				348CEB1E28DFF30D004F82A1 /* TeenFinLitAppApp.swift */,
-				348CEB2028DFF30D004F82A1 /* ContentView.swift */,
+				348CEB2C28DFF3C0004F82A1 /* Views */,
+				348CEB2E28DFF3CA004F82A1 /* ViewModels */,
+				348CEB2D28DFF3C5004F82A1 /* Models */,
+				348CEB2F28DFF3D4004F82A1 /* Data */,
 				348CEB2228DFF316004F82A1 /* Assets.xcassets */,
 				348CEB2428DFF316004F82A1 /* Preview Content */,
 			);
@@ -65,6 +74,38 @@
 				348CEB2528DFF316004F82A1 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		348CEB2C28DFF3C0004F82A1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				348CEB2028DFF30D004F82A1 /* ContentView.swift */,
+				348CEB3428DFF495004F82A1 /* FunctionalView.swift */,
+				348CEB3228DFF485004F82A1 /* LibraryView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		348CEB2D28DFF3C5004F82A1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		348CEB2E28DFF3CA004F82A1 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		348CEB2F28DFF3D4004F82A1 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				348CEB3028DFF416004F82A1 /* data.json */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +167,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				348CEB2628DFF316004F82A1 /* Preview Assets.xcassets in Resources */,
+				348CEB3128DFF416004F82A1 /* data.json in Resources */,
 				348CEB2328DFF316004F82A1 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,6 +180,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				348CEB2128DFF30D004F82A1 /* ContentView.swift in Sources */,
+				348CEB3528DFF495004F82A1 /* FunctionalView.swift in Sources */,
+				348CEB3328DFF485004F82A1 /* LibraryView.swift in Sources */,
 				348CEB1F28DFF30D004F82A1 /* TeenFinLitAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
