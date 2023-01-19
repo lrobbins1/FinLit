@@ -18,7 +18,7 @@ struct ContentViewRow: View {
             return model.currentModule!.content.lessons[index]
         }
         else {
-            return Lesson(id: 0, title: "", video: "", duration: "", explanation: "")
+            return Lesson(id: 0, title: "", video: "", explanation: "")
         }
         
     }
@@ -42,7 +42,6 @@ struct ContentViewRow: View {
             VStack (alignment: .leading) {
                 Text (lesson.title)
                     .bold()
-                Text (lesson.duration)
             }
         }
         .padding()
