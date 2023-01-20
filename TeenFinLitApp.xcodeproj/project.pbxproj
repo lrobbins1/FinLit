@@ -20,7 +20,7 @@
 		342D0B6229777D1C008003F7 /* style.html in Resources */ = {isa = PBXBuildFile; fileRef = 342D0B6129777D1C008003F7 /* style.html */; };
 		342D0B6529777DF9008003F7 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 342D0B6429777DF9008003F7 /* AVKit.framework */; };
 		343851CE290591A100698026 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343851CD290591A100698026 /* Models.swift */; };
-		348CEB1F28DFF30D004F82A1 /* TeenFinLitAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348CEB1E28DFF30D004F82A1 /* TeenFinLitAppApp.swift */; };
+		348CEB1F28DFF30D004F82A1 /* FinTeen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348CEB1E28DFF30D004F82A1 /* FinTeen.swift */; };
 		348CEB2128DFF30D004F82A1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348CEB2028DFF30D004F82A1 /* ContentView.swift */; };
 		348CEB2328DFF316004F82A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 348CEB2228DFF316004F82A1 /* Assets.xcassets */; };
 		348CEB2628DFF316004F82A1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 348CEB2528DFF316004F82A1 /* Preview Assets.xcassets */; };
@@ -41,8 +41,8 @@
 		342D0B6129777D1C008003F7 /* style.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = style.html; sourceTree = "<group>"; };
 		342D0B6429777DF9008003F7 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
 		343851CD290591A100698026 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
-		348CEB1B28DFF30D004F82A1 /* TeenFinLitApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TeenFinLitApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		348CEB1E28DFF30D004F82A1 /* TeenFinLitAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeenFinLitAppApp.swift; sourceTree = "<group>"; };
+		348CEB1B28DFF30D004F82A1 /* FinTeen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinTeen.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		348CEB1E28DFF30D004F82A1 /* FinTeen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinTeen.swift; sourceTree = "<group>"; };
 		348CEB2028DFF30D004F82A1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		348CEB2228DFF316004F82A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		348CEB2528DFF316004F82A1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -81,7 +81,7 @@
 		348CEB1C28DFF30D004F82A1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				348CEB1B28DFF30D004F82A1 /* TeenFinLitApp.app */,
+				348CEB1B28DFF30D004F82A1 /* FinTeen.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -89,7 +89,7 @@
 		348CEB1D28DFF30D004F82A1 /* TeenFinLitApp */ = {
 			isa = PBXGroup;
 			children = (
-				348CEB1E28DFF30D004F82A1 /* TeenFinLitAppApp.swift */,
+				348CEB1E28DFF30D004F82A1 /* FinTeen.swift */,
 				348CEB2C28DFF3C0004F82A1 /* Views */,
 				348CEB2E28DFF3CA004F82A1 /* ViewModels */,
 				348CEB2D28DFF3C5004F82A1 /* Models */,
@@ -167,7 +167,7 @@
 			);
 			name = TeenFinLitApp;
 			productName = TeenFinLitApp;
-			productReference = 348CEB1B28DFF30D004F82A1 /* TeenFinLitApp.app */;
+			productReference = 348CEB1B28DFF30D004F82A1 /* FinTeen.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -232,7 +232,7 @@
 				342D0B6029777CD8008003F7 /* Constants.swift in Sources */,
 				342D0B5A29777C3F008003F7 /* CodeTextView.swift in Sources */,
 				348CEB2128DFF30D004F82A1 /* ContentView.swift in Sources */,
-				348CEB1F28DFF30D004F82A1 /* TeenFinLitAppApp.swift in Sources */,
+				348CEB1F28DFF30D004F82A1 /* FinTeen.swift in Sources */,
 				342D0B5C29777C58008003F7 /* RectangleCard.swift in Sources */,
 				342D0B5229777BB8008003F7 /* ContentViewRow.swift in Sources */,
 			);
@@ -378,7 +378,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = lrobbins.TeenFinLitApp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = FinTeen;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -408,7 +408,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = lrobbins.TeenFinLitApp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = FinTeen;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

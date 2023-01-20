@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct TeenFinLitAppApp: App {
+struct FinTeen: App {
     var body: some Scene {
         WindowGroup {
             HomeView()

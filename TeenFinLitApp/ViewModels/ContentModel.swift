@@ -37,9 +37,7 @@ class ContentModel: ObservableObject {
         
         //Parse local included JSON Data
         getLocalData()
-        
-        //Download remote JSON file and parse data
-        getRemoteData()
+
     }
     
     //MARK: - Data methods
@@ -79,56 +77,6 @@ class ContentModel: ObservableObject {
             //Log error
             print ("Couldnt parse style data")
         }
-    }
-    
-    func getRemoteData() {
-        
-        //String path
-        let urlString = "https://lrobbins1.github.io/cwclearningappdata/data2.json"
-        
-        //Create a url object from that
-        let url = URL(string: urlString)
-        
-        guard url != nil else {
-            //Couldnt create URL
-            return
-        }
-        
-        //Create a URLRequest object
-        let request = URLRequest(url: url!)
-        
-        //Get the session and kick off the task
-        let session = URLSession.shared
-        
-        let dataTask = session.dataTask(with: request) { (data, response, error) in
-                                           
-            //Check if theres an error
-            guard error == nil else {
-                //There was an error
-                return
-            }
-            
-            do {
-            //Create JSON decoder
-            let decoder = JSONDecoder()
-            
-            //Decode
-                let modules = try decoder.decode([Module].self, from: data!)
-                
-                DispatchQueue.main.async {
-                    
-                    //Append parsed modules into modules property
-                    self.modules += modules
-                }
-
-            }
-            catch {
-                //Couldn't parse JSON
-            }
-        }
-        //Kick off the data task
-        dataTask.resume()
-        
     }
     
     //MARK: - Module navigation methods

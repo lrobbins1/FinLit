@@ -15,14 +15,8 @@ struct ContentDetailView: View {
     var body: some View {
         
         let lesson = model.currentLesson
-        let url = URL(string: Constants.videoHostUrl + (lesson?.video ?? ""))
         
         VStack{
-            //Only show video if we get a valid URL
-            if url != nil {
-            VideoPlayer(player: AVPlayer(url: url!))
-                    .cornerRadius(10)
-            }
             
             //TODO: Description
             CodeTextView()
