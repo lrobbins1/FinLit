@@ -4,7 +4,7 @@
         "category": "Credit Cards",
         "content": {
             "id": 0,
-            "image": "swift",
+            "image": "creditcard",
             "time": "3 hours",
             "description": "Learn all about credit cards, an important step towards financial independence!",
             "lessons": [
@@ -72,7 +72,7 @@
         },
         "test": {
             "id": 0,
-            "image": "testSwift",
+            "image": "cardtest",
             "time": "30 minutes",
             "description": "Confirm your mastery of credit cards with this test!",
             "questions": [
